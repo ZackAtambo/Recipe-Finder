@@ -1,0 +1,24 @@
+{
+  "name": "recipe-finder",
+  "version": "1.0.0",
+  "description": "recipe finder web app",
+  "main": "script.js",
+  "scripts": {
+    "start": "http-server dist",
+    "build": "rimraf dist && mkdir dist && copyfiles -u 1 **/* dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "concurrently": "^8.2.2",
+    "express": "^4.19.2",
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^5.0.1"
+  }
+}
